@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test API</title>
+        <script>
+            var req = new XMLHttpRequest();
+            req.open("GET", "http://localhost:8080/https://www.boardgamegeek.com/xmlapi2/thing?id=013", false);
+            req.send(null);
+            console.log(req.responseText);
+        </script>
+    </head>
+    <body>
+        <p id = "gameName"></p>
+
+        <script>
+            let parser, xml, gameName;
+            let text = req.responseText;
+
+            parser = new DOMParser();
+            xml = parser.parseFromString(text, "text/xml");
+
+            gameName = document.getElementById("gameName");
+            gameName.innerHTML = xml.getElementsByTagName("link")[0].getAttribute('value');
+        </script>
+    </body>
+</html>

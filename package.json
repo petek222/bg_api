@@ -1,0 +1,22 @@
+{
+  "name": "bg_app",
+  "version": "1.0.0",
+  "description": "Setting up an initial framework for the BGG (boardgamegeek.com) API for a future project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petek222/bg_app.git"
+  },
+  "author": "Peter Koncelik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petek222/bg_app/issues"
+  },
+  "homepage": "https://github.com/petek222/bg_app#readme",
+  "dependencies": {
+    "cors-anywhere": "^0.4.1"
+  }
+}
