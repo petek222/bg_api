@@ -1,0 +1,1 @@
+Setting up an initial framework for the BGG (boardgamegeek.com) API for a future project.
